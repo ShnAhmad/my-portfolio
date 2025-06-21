@@ -1,6 +1,7 @@
 import { Route, Routes, HashRouter, Navigate } from "react-router-dom";
 import Splash from "../components/pages/splash/Splash";
 import Contact from "../components/pages/contact/Contact";
+import Experience from "../components/pages/experience/Experience";
 export default function AppRoutes(propss) {
     return (
         <div>
@@ -13,9 +14,15 @@ export default function AppRoutes(propss) {
                         }
                     />
                     <Route
-                        path="/Contact"
+                        path="/contact"
                         element={
                             <Contact theme={propss.theme} setTheme={propss.setTheme} />
+                        }
+                    />
+                    <Route
+                        path="/experience"
+                        element={
+                            <Experience theme={propss.theme} setTheme={propss.setTheme} />
                         }
                     />
                 </Routes>

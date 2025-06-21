@@ -554,46 +554,27 @@ const experience = {
     title: "Experience",
     subtitle: "Career Highlights",
     description:
-        "With over 4+ years of experience as a Full Stack Developer, I have built scalable, user-centric products for diverse stakeholders at Infosys, Ottonomy, and Fractal. My work spans multiple domains including Robotics, CPG(Consumer Packaged Goods), Retail, and Education.",
-    header_image_path: "experience.svg",
-    sections: {
-        title: "Work Experience",
-        experiences: [
-            {
-                title: "SDE 2",
-                company: "Fractal",
-                company_url: "https://fractal.ai/",
-                logo_path: "fractal-logo.jpg",
-                alt_name: "fractal-logo",
-                duration: "(April, 2024 - Present)",
-                location: "Gurugram (Remote)",
-                // description: "<li> Developed so and so things.... </li><br><li>Implemented so and so things.... </li>",
-                color: "#ffffff",
-            },
-            {
-                title: "SDE 1",
-                company: "Ottonomy",
-                company_url: "https://ottonomy.io/",
-                logo_path: "ottonomy-logo.webp",
-                alt_name: "ottonomy-logo",
-                duration: "(May, 2023 - April, 2024)",
-                location: "Gurugram (Hybrid)",
-                // description: "<li> Developed so and so things.... </li><br><li>Implemented so and so things.... </li>",
-                color: "#000000",
-            },
-            {
-                title: "Senior System Associate",
-                company: "Infosys",
-                company_url: "https://www.infosys.com/",
-                logo_path: "infosys-logo.png",
-                alt_name: "infosys-logo",
-                duration: "(Aug, 2021 - May, 2023)",
-                location: "Mysore (Remote)",
-                // description: "<li> Developed so and so things.... </li><br><li>Implemented so and so things.... </li>",
-                color: "#0071C5",
-            },
-        ],
-    },
+        "Software Engineer with experience building scalable applications across web, mobile, and desktop platforms. I have contributed to high-performance POS and management systems at Arkhitech and developed scalable web and mobile apps at Next Generation Circle, working on both frontend and backend with a strong focus on clean architecture, performance, and responsive design.",
+    experiences: [
+        {
+            title: "Software Engineer - RaectJS/Flutter",
+            company: "Akhitech",
+            company_url: "https://www.arkhitech.com/",
+            duration: "(Oct, 2024 - Present)",
+            location: "Islamabad, Pakistan",
+            description: "<li> Currently working as a Software Engineer at Arkhitech, contributing to the development of cross-platform POS and management systems using React.js, React Native, Electron.js, Node.js, SQLite, and MUI.</li><br><li>Responsible for full-cycle development, including architecture planning, performance optimization, database handling, API integration, and ensuring code quality across mobile and desktop platforms.</li><br><li>Collaborating in a fast-paced agile environment, translating business requirements into scalable solutions while maintaining a strong focus on functionality, reliability, and maintainability.</li>",
+            color: "#ffffff",
+        },
+        {
+            title: "Front End Developer",
+            company: "Next Generation Circle",
+            company_url: "https://www.nextgcircle.com/",
+            duration: "(Nov, 2023 - March, 2024)",
+            location: "Peshawar, Pakistan (Remote)",
+            description: "<li> Worked remotely as a Front-End Developer at Next Generation Circle, developing cross-platform applications using React.js (web) and Flutter (mobile) with a strong focus on performance and scalability.</li><br><li>Implemented MVVM architecture and Provider in Flutter, and built modular React components using Hooks, Context API, Redux, and Tailwind CSS for clean and maintainable code.</li><br><li>Integrated RESTful APIs, handled complex UIs, and collaborated in agile sprints using Git, Jira, and Slack, ensuring responsive design and smooth user experiences across all platforms.</li>",
+            color: "#000000",
+        },
+    ],
 };
 
 // Projects Page
