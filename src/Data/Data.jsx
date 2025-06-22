@@ -581,19 +581,21 @@ const experience = {
 const projectsHeader = {
     title: "Projects",
     description:
-        "My projects leverage a wide range of modern technologies, with a strong emphasis on building robust and scalable full-stack applications. My core expertise lies in developing MERN (MongoDB, Express, React, Node.js) and Django-based full stack projects. Below are some of the key projects I’ve worked on.",
-    avatar_image_path: "projects_image.svg",
+        "I specialize in developing cross-platform applications using modern frameworks like React Native, Flutter, React, Electron, Next.js, and Node.js. My projects focus on building robust, scalable, and user-friendly solutions across mobile, web, and desktop platforms. I emphasize clean architecture, seamless API integration, and performance optimization throughout the development lifecycle.",
 };
 
 const projects = {
     data: [
         {
-            id: "project-0",
+            id: "Portfolio",
             name: "Portfolio",
-            url: "",
-            repoUrl: "https://github.com/sumit-sharma-02/sumit-portfolio",
+            repoUrl: "https://github.com/ShnAhmad/my-portfolio",
             description: "You are watching it right now 😉.",
             languages: [
+                {
+                    name: "JavaScript",
+                    iconifyClass: "material-icon-theme:javascript-map",
+                },
                 {
                     name: "React",
                     iconifyClass: "logos-react",
@@ -607,10 +609,6 @@ const projects = {
                     iconifyClass: "vscode-icons:file-type-css",
                 },
                 {
-                    name: "JavaScript",
-                    iconifyClass: "logos-javascript",
-                },
-                {
                     name: "React Reveal",
                     iconifyClass: "simple-icons:scrollreveal",
                 },
@@ -621,148 +619,157 @@ const projects = {
             ],
         },
         {
-            id: "project-1",
-            name: "Crafty Commerce",
-            url: "https://crafty-commerce.vercel.app/",
-            repoUrl: "https://github.com/sumit-sharma-02/crafty-commerce",
+            id: "Howmuch",
+            name: "Howmuch POS",
+            url: "https://www.howmuchpos.com/",
             description:
-                "Crafty Commerce is a full stack e-commerce web application that allows you to purchase different categories of product online. You can apply filters accordingly and find your favourite products in crafty commerce. You can pay with debit/credit cards and in just few click your product will be delivered.",
+                "Howmuch is the provider of cloud-based Point of Sale software that gives users a consistent experience by integrating their whole business operations with its AI capabilities. Howmuch encompass affordability with the latest and modern service methods. We guaranteed a high rate of satisfaction, personalized services, competitive pricing, modern equipment, and facilities that promote business practices.",
             languages: [
+                {
+                    name: "Electron",
+                    iconifyClass: "simple-icons:electron",
+                },
                 {
                     name: "React",
                     iconifyClass: "logos:react",
                 },
                 {
-                    name: "Redux",
-                    iconifyClass: "logos:redux",
+                    name: "MySQL",
+                    iconifyClass: "logos:mysql",
                 },
-                {
-                    name: "Express",
-                    iconifyClass: "simple-icons:express",
-                },
+
                 {
                     name: "Nodejs",
                     iconifyClass: "logos:nodejs",
                 },
                 {
-                    name: "MongoDB",
-                    iconifyClass: "vscode-icons:file-type-mongo",
+                    name: "React Native",
+                    iconifyClass: "devicon:reactnative-wordmark",
                 },
                 {
-                    name: "Stripe",
-                    iconifyClass: "logos:stripe",
+                    name: "MUI",
+                    iconifyClass: "logos:material-ui",
                 },
                 {
                     name: "Tailwind",
                     iconifyClass: "vscode-icons:file-type-tailwind",
                 },
                 {
-                    name: "Cloudinary",
-                    iconifyClass: "logos:cloudinary-icon",
-                },
-                {
-                    name: "Framer Motion",
-                    iconifyClass: "logos:framer",
-                },
-            ],
-        },
-        {
-            id: "project-2",
-            name: "Little Lemon Restaurant",
-            url: "https://little-lemon-restaurant-sumit-sharma-02.vercel.app/",
-            repoUrl: "https://github.com/sumit-sharma-02/little-lemon-restaurant",
-            description:
-                "Final capstone project for Meta Front-end developer program on Coursera, which contains a detailed and responsive website with table-booking functionality built using React.",
-            languages: [
-                {
-                    name: "React",
-                    iconifyClass: "logos:react",
-                }
-            ],
-        },
-        {
-            id: "project-3",
-            name: "Tikkaway",
-            url: "https://restaurant-app-bceb0.web.app/",
-            repoUrl: "https://github.com/sumit-sharma-02/tikkaway",
-            description:
-                "Tikkaway is a full stack restaurant web application that allows you to order food online. It has wide variety of categories on the menu like Chicken, Curry, Rice, Fish, Fruits, Icecreams, Soft Drinks etc.",
-            languages: [
-                {
-                    name: "React",
-                    iconifyClass: "logos:react",
+                    name: "Ruby On Rails",
+                    iconifyClass: "mdi:language-ruby-on-rails",
                 },
                 {
                     name: "Redux",
-                    iconifyClass: "logos:redux",
+                    iconifyClass: "devicon:redux",
+                },
+            ],
+        },
+        {
+            id: "Foodnerd",
+            name: "Foodnerd POS",
+            url: "https://www.foodnerdpos.com/",
+            description:
+                "Foodnerd goes beyond POS, offering a complete restaurant management solution to simplify operations, engage customers, and drive growth. From effortless order handling to real-time inventory updates, we help you focus on what matters most - delivering unforgettable dining experiences.",
+            languages: [
+                {
+                    name: "Electron",
+                    iconifyClass: "simple-icons:electron",
+                },
+                {
+                    name: "React",
+                    iconifyClass: "logos:react",
+                },
+                {
+                    name: "MySQL",
+                    iconifyClass: "logos:mysql",
+                },
+
+                {
+                    name: "Nodejs",
+                    iconifyClass: "logos:nodejs",
+                },
+                {
+                    name: "React Native",
+                    iconifyClass: "devicon:reactnative-wordmark",
+                },
+                {
+                    name: "MUI",
+                    iconifyClass: "logos:material-ui",
+                },
+                {
+                    name: "Tailwind",
+                    iconifyClass: "vscode-icons:file-type-tailwind",
+                },
+                {
+                    name: "Ruby On Rails",
+                    iconifyClass: "mdi:language-ruby-on-rails",
+                },
+                {
+                    name: "Redux",
+                    iconifyClass: "devicon:redux",
+                },
+            ],
+        },
+        {
+            id: "Quizet",
+            name: "Quizet",
+            repoUrl: "https://github.com/ShnAhmad/React-Native-quiz-App",
+            description:
+                "Quizet is a free and open-source quiz application that helps users test their knowledge and skills in different subjects. Users can choose their preferred course and difficulty level to customize their learning experience. The app offers a wide variety of questions and quizzes to make learning engaging and enjoyable.",
+            languages: [
+                {
+                    name: "React Native",
+                    iconifyClass: "devicon:reactnative-wordmark",
+                },
+                {
+                    name: "JavasScript",
+                    iconifyClass: "material-icon-theme:javascript-map",
                 },
                 {
                     name: "Firebase",
                     iconifyClass: "logos:firebase",
                 },
                 {
-                    name: "Tailwind",
-                    iconifyClass: "vscode-icons:file-type-tailwind",
-                },
-                {
-                    name: "Framer Motion",
-                    iconifyClass: "logos:framer",
+                    name: "Trivia Database",
+                    iconifyClass: "fluent:database-24-regular",
                 },
             ],
         },
         {
-            id: "project-4",
-            name: "SpaceX Capsules",
-            url: "https://spacex-capsules.vercel.app/",
-            repoUrl: "https://github.com/sumit-sharma-02/spacex-capsules",
+            id: "ExpenseTracker",
+            name: "Expense Tracker",
+            repoUrl: "https://github.com/ShnAhmad/Expense_Tracker",
             description:
-                "A React application which shows you the filtered spaceX capsules data.",
+                "This Expense Tracker app allows users to log, categorize, and visualize their daily expenses. With an intuitive interface and smooth animations, it provides a seamless experience for keeping track of your spending habits.",
             languages: [
                 {
-                    name: "React",
-                    iconifyClass: "logos:react",
+                    name: "Flutter",
+                    iconifyClass: "logos:flutter",
                 },
                 {
-                    name: "Redux",
-                    iconifyClass: "logos:redux",
-                },
-                {
-                    name: "Tailwind",
-                    iconifyClass: "vscode-icons:file-type-tailwind",
+                    name: "Dart",
+                    iconifyClass: "logos:dart",
                 },
             ],
         },
         {
-            id: "project-5",
-            name: "MEAN Agency",
-            url: "",
-            repoUrl: "https://github.com/sumit-sharma-02/mean-agency",
+            id: "DeepDreamer",
+            name: "Deep Dreamer",
+            repoUrl: "https://github.com/ShnAhmad/Deep_Dreamer",
             description:
-                "Mean Agency is a full stack service provider web application that allows you to provide services to other companies.",
+                "A Flutter app that allows users to search for AI-generated images based on text prompts. It uses the Lexica API to fetch and display images in a grid layout.",
             languages: [
                 {
-                    name: "Angular",
-                    iconifyClass: "logos:angular-icon",
+                    name: "Flutter",
+                    iconifyClass: "logos:flutter",
                 },
                 {
-                    name: "Express",
-                    iconifyClass: "simple-icons:express",
+                    name: "Dart",
+                    iconifyClass: "logos:dart",
                 },
                 {
-                    name: "Nodejs",
-                    iconifyClass: "logos:nodejs",
-                },
-                {
-                    name: "MongoDB",
-                    iconifyClass: "vscode-icons:file-type-mongo",
-                },
-                {
-                    name: "Bootstrap",
-                    iconifyClass: "logos:bootstrap",
-                },
-                {
-                    name: "Handlebars",
-                    iconifyClass: "vscode-icons:file-type-handlebars",
+                    name: "Laxica",
+                    iconifyClass: "arcticons:lexica",
                 },
             ],
         },
