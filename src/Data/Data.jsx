@@ -18,8 +18,8 @@ const greeting = {
     subTitle1: "Software Developer.",
     subTitle2: "Full Stack Developer.",
     subTitle: "Full Stack Developer, Life Long Learner.",
-    // resumeLink:
-    //   "https://drive.google.com/file/d/1-SSCPhVG80IDtpx7_TPpsLfJyEA7NEtv/view?usp=drive_link",
+    resumeLink:
+        "https://drive.google.com/file/d/1ouxStMiUZf7YftSoea-Xn4_aH57zLRHb/view?usp=sharing",
     mail: "mailto:shanahmad.dev@gmail.com@gmail.com",
 };
 
@@ -37,10 +37,12 @@ const skills = {
             title: "Full Stack Development",
             fileName: "FullStackImg",
             skills: [
-                "⚡ Develop highly interactive user interfaces and seamless backend integration for high-performance web applications.",
-                "⚡ Built responsive and accessible frontends using modern frameworks like React.js and Next.js",
-                "⚡ Developed robust and scalable backends using Django, Node.js, Express, Snowflake, SQL, and MongoDB.",
-                "⚡ Integration of AWS services such as AWS Lambda, S3, serverless functions and secrets manager.",
+                "⚡ Developed responsive and interactive frontends using React.js, Next.js, for web platforms.",
+                "⚡ Delivered seamless cross-platform experiences using Flutter, React Native and Electron, with a strong focus on UI consistency and performance.",
+                "⚡ Built and maintained robust backend services using Node.js, Express, SQLite, MongoDB, and PostgreSQL, with efficient RESTful API integration.",
+                "⚡ Utilized AWS services like S3, Lambda, and Secrets Manager for secure, scalable backend functionality.",
+                "⚡ Implemented CI/CD pipelines using GitHub Actions for automated testing and deployment across environments.",
+
             ],
             softwareSkills: [
                 {
@@ -355,7 +357,7 @@ const certifications = {
             subtitle: "Cisco Certified Network Associate Routing and Switching (CCNA)",
             logo: cisco,
             certificate_link:
-                "https://coursera.org/share/438a8e16af4786782c8a739aef79e999",
+                "https://drive.google.com/file/d/1pfi3K1IRplI34RmqNl3MbEnxfzDpMC6u/view?usp=sharing",
             alt_name: "IBM",
             color_code: "white",
         },
