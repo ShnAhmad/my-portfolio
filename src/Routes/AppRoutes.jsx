@@ -2,6 +2,7 @@ import { Route, Routes, HashRouter, Navigate } from "react-router-dom";
 import Splash from "../pages/splash/Splash";
 import Contact from "../pages/contact/Contact";
 import Experience from "../pages/experience/Experience";
+import Projects from "../pages/projects/Projects";
 export default function AppRoutes(propss) {
     return (
         <div>
@@ -23,6 +24,12 @@ export default function AppRoutes(propss) {
                         path="/experience"
                         element={
                             <Experience theme={propss.theme} setTheme={propss.setTheme} />
+                        }
+                    />
+                    <Route
+                        path="/projects"
+                        element={
+                            <Projects theme={propss.theme} setTheme={propss.setTheme} />
                         }
                     />
                 </Routes>
