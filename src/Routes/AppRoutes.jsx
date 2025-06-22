@@ -4,6 +4,7 @@ import Contact from "../pages/contact/Contact";
 import Experience from "../pages/experience/Experience";
 import Projects from "../pages/projects/Projects";
 import Education from "../pages/education/Education";
+import Home from "../pages/home/Home";
 export default function AppRoutes(propss) {
     return (
         <div>
@@ -16,9 +17,15 @@ export default function AppRoutes(propss) {
                         }
                     />
                     <Route
-                        path="/contact"
+                        path="/home"
                         element={
-                            <Contact theme={propss.theme} setTheme={propss.setTheme} />
+                            <Home theme={propss.theme} setTheme={propss.setTheme} />
+                        }
+                    />
+                    <Route
+                        path="/education"
+                        element={
+                            <Education theme={propss.theme} setTheme={propss.setTheme} />
                         }
                     />
                     <Route
@@ -34,9 +41,9 @@ export default function AppRoutes(propss) {
                         }
                     />
                     <Route
-                        path="/education"
+                        path="/contact"
                         element={
-                            <Education theme={propss.theme} setTheme={propss.setTheme} />
+                            <Contact theme={propss.theme} setTheme={propss.setTheme} />
                         }
                     />
                 </Routes>
