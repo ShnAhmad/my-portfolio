@@ -40,7 +40,12 @@
 
 .profile-pic {
     /* box-shadow: 0 5px 15px #353535; */
-    border-radius: 4px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ff4081;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .blog-heading-img-div {

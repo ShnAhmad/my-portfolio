@@ -1,5 +1,6 @@
 import "./Contact.css";
-import convocation from "../../assets/images/convocation.jpg"
+import profile from "../../assets/images/profile.png"
+
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { Fade } from "react-awesome-reveal";
 import { contactPageData } from "../../Data/Data";
@@ -21,7 +22,7 @@ export default function Contact(props) {
                         <div className="contact-heading-img-div">
                             <img
                                 className="profile-pic"
-                                src={convocation}
+                                src={profile}
                                 alt=""
                             />
                         </div>
