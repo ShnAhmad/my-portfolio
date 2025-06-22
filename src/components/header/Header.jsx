@@ -30,7 +30,7 @@ function Header(props) {
         },
     });
 
-    const link = settings.isSplash ? "/splash" : "Contact";
+    const link = settings.isSplash ? "/splash" : "home";
 
     const [currTheme, setCurrTheme] = useState(props.theme);
 
