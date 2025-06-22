@@ -1,7 +1,7 @@
 import { Route, Routes, HashRouter, Navigate } from "react-router-dom";
-import Splash from "../components/pages/splash/Splash";
-import Contact from "../components/pages/contact/Contact";
-import Experience from "../components/pages/experience/Experience";
+import Splash from "../pages/splash/Splash";
+import Contact from "../pages/contact/Contact";
+import Experience from "../pages/experience/Experience";
 export default function AppRoutes(propss) {
     return (
         <div>

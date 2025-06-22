@@ -2,16 +2,16 @@ import React from "react";
 import "./Experience.css";
 import ExperienceImg from "./ExperienceImg.jsx";
 import { Fade } from "react-awesome-reveal";
-import { experience } from "../../../Data/Data.jsx";
-import Footer from "../../footer/Footer.jsx";
-import Navbar from "../../Navbar/Navbar.jsx";
-import ExperienceAccordion from "../../experienceAccordion/ExperienceAccordion.jsx";
+import { experience } from "../../Data/Data.jsx";
+import Footer from "../../components/footer/Footer.jsx";
+import Header from "../../components/header/Header.jsx";
+import ExperienceAccordion from "../../components/experienceAccordion/ExperienceAccordion.jsx";
 
 function Experience(props) {
   const theme = props.theme;
   return (
     <div className="experience-main">
-      <Navbar theme={theme} setTheme={props.setTheme} />
+      <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-experience">
         <Fade>
           <div className="experience-heading-div">

@@ -1,13 +1,10 @@
 import "./Contact.css";
-import { contactPageData } from "../../../Data/Data";
-import Navbar from "../../Navbar/Navbar";
-import profile from "../../../assets/images/profile.png"
-import convocation from "../../../assets/images/convocation.jpg"
-
-
-import SocialMedia from "../../socialMedia/SocialMedia";
-import Footer from "../../footer/Footer";
+import convocation from "../../assets/images/convocation.jpg"
+import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { Fade } from "react-awesome-reveal";
+import { contactPageData } from "../../Data/Data";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 
 
 
@@ -17,7 +14,7 @@ export default function Contact(props) {
     const theme = props.theme;
     return (
         <div className="contact-main">
-            <Navbar theme={theme} setTheme={props.setTheme} />
+            <Header theme={theme} setTheme={props.setTheme} />
             <div className="basic-contact">
                 <Fade >
                     <div className="contact-heading-div">

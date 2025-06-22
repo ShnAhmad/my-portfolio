@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { style } from "glamor";
-import "./Navbar.css";
+import "./Header.css";
 import { greeting, settings } from "../../Data/Data";
 import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi2";
 import { Fade } from "react-awesome-reveal";
 
-function Navbar(props) {
+function Header(props) {
     const theme = props.theme;
 
     const styles = style({
@@ -146,4 +146,4 @@ function Navbar(props) {
     );
 }
 
-export default Navbar;
+export default Header;
