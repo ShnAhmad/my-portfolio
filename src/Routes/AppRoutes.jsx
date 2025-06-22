@@ -3,6 +3,7 @@ import Splash from "../pages/splash/Splash";
 import Contact from "../pages/contact/Contact";
 import Experience from "../pages/experience/Experience";
 import Projects from "../pages/projects/Projects";
+import Education from "../pages/education/Education";
 export default function AppRoutes(propss) {
     return (
         <div>
@@ -30,6 +31,12 @@ export default function AppRoutes(propss) {
                         path="/projects"
                         element={
                             <Projects theme={propss.theme} setTheme={propss.setTheme} />
+                        }
+                    />
+                    <Route
+                        path="/education"
+                        element={
+                            <Education theme={propss.theme} setTheme={propss.setTheme} />
                         }
                     />
                 </Routes>
