@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 import { experience } from "../../Data/Data.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 import Header from "../../components/header/Header.jsx";
-import ExperienceAccordion from "../../components/experienceAccordion/ExperienceAccordion.jsx";
+import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.jsx";
 
 function Experience(props) {
   const theme = props.theme;
