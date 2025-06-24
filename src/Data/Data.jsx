@@ -2,6 +2,10 @@
 import comsats from "../assets/images/comsats.png"
 import cisco from "../assets/images/cisco.png"
 import comsatsATD from "../assets/images/comsatsatd.png"
+import profile from "../assets/images/profile.png"
+import arkhitechLogo from "../assets/images/Arkhitech.png"
+import NGENLogo from "../assets/images/NGEN.png"
+
 
 //Home Page
 const greeting = {
@@ -12,6 +16,7 @@ const greeting = {
     subTitle1: "Software Developer.",
     subTitle2: "Full Stack Developer.",
     subTitle: "Full Stack Developer, Life Long Learner.",
+    profileImage: profile,
     resumeLink:
         "https://drive.google.com/file/d/1ouxStMiUZf7YftSoea-Xn4_aH57zLRHb/view?usp=sharing",
     mail: "mailto:shanahmad.dev@gmail.com@gmail.com",
@@ -47,10 +52,24 @@ const skills = {
                     },
                 },
                 {
+                    skillName: "React Native",
+                    fontAwesomeClassname: "devicon:reactnative-wordmark",
+                    style: {
+                        color: "#61DAFB",
+                    },
+                },
+                {
                     skillName: "Next.js",
                     fontAwesomeClassname: "logos:nextjs-icon",
                     style: {
                         color: "#000000",
+                    },
+                },
+                {
+                    skillName: "Flutter",
+                    fontAwesomeClassname: "logos:flutter",
+                    style: {
+                        color: "#61DAFB",
                     },
                 },
                 {
@@ -61,31 +80,10 @@ const skills = {
                     },
                 },
                 {
-                    skillName: "Python",
-                    fontAwesomeClassname: "logos:python",
+                    skillName: "Zustand",
+                    fontAwesomeClassname: "devicon:zustand",
                     style: {
-                        color: "#3776AB",
-                    },
-                },
-                {
-                    skillName: "Django",
-                    fontAwesomeClassname: "simple-icons:django",
-                    style: {
-                        color: "#0e3b2c",
-                    },
-                },
-                {
-                    skillName: "Snowflake",
-                    fontAwesomeClassname: "logos:snowflake-icon",
-                    style: {
-                        color: "#439743",
-                    },
-                },
-                {
-                    skillName: "AWS",
-                    fontAwesomeClassname: "logos:aws",
-                    style: {
-                        color: "#f4f2ed",
+                        color: "#593D88",
                     },
                 },
                 {
@@ -93,6 +91,13 @@ const skills = {
                     fontAwesomeClassname: "logos:javascript",
                     style: {
                         backgroundColor: "#FFFFFF",
+                        color: "#F7DF1E",
+                    },
+                },
+                {
+                    skillName: "Dart",
+                    fontAwesomeClassname: "logos:dart",
+                    style: {
                         color: "#F7DF1E",
                     },
                 },
@@ -169,24 +174,6 @@ const skills = {
                     },
                 },
                 {
-                    skillName: "Framer Motion",
-                    fontAwesomeClassname: "logos:framer",
-                    style: {
-                        color: "#635BFF",
-                        width: "1em",
-                        height: "1em",
-                    },
-                },
-                {
-                    skillName: "Styled Components",
-                    fontAwesomeClassname: "vscode-icons:file-type-styled",
-                    style: {
-                        color: "#635BFF",
-                        width: "1em",
-                        height: "1em",
-                    },
-                },
-                {
                     skillName: "Bootstrap",
                     fontAwesomeClassname: "simple-icons:bootstrap",
                     style: {
@@ -208,21 +195,10 @@ const skills = {
                     },
                 },
                 {
-                    skillName: "Cloudinary",
-                    fontAwesomeClassname: "logos:cloudinary-icon",
+                    skillName: "AWS",
+                    fontAwesomeClassname: "logos:aws",
                     style: {
-                        color: "#635BFF",
-                        width: "1em",
-                        height: "1em",
-                    },
-                },
-                {
-                    skillName: "Stripe",
-                    fontAwesomeClassname: "logos:stripe",
-                    style: {
-                        color: "#635BFF",
-                        width: "1em",
-                        height: "1em",
+                        color: "#f4f2ed",
                     },
                 },
                 {
@@ -231,7 +207,21 @@ const skills = {
                     style: {
                         color: "#E94E32",
                     },
-                }
+                },
+                {
+                    skillName: "GitLab",
+                    fontAwesomeClassname: "devicon:gitlab",
+                    style: {
+                        color: "#E94E32",
+                    },
+                },
+                {
+                    skillName: "Jira",
+                    fontAwesomeClassname: "devicon:jira-wordmark",
+                    style: {
+                        color: "#007FFF",
+                    },
+                },
             ],
         },
         {
@@ -248,13 +238,6 @@ const skills = {
                     fontAwesomeClassname: "logos:aws",
                     style: {
                         color: "#f4f2ed",
-                    },
-                },
-                {
-                    skillName: "Snowflake",
-                    fontAwesomeClassname: "logos:snowflake-icon",
-                    style: {
-                        color: "#439743",
                     },
                 },
                 {
@@ -382,6 +365,7 @@ const experience = {
             location: "Islamabad, Pakistan",
             description: "<li> Currently working as a Software Engineer at Arkhitech, contributing to the development of cross-platform POS and management systems using React.js, React Native, Electron.js, Node.js, SQLite, and MUI.</li><br><li>Responsible for full-cycle development, including architecture planning, performance optimization, database handling, API integration, and ensuring code quality across mobile and desktop platforms.</li><br><li>Collaborating in a fast-paced agile environment, translating business requirements into scalable solutions while maintaining a strong focus on functionality, reliability, and maintainability.</li>",
             color: "#ffffff",
+            logo: arkhitechLogo
         },
         {
             title: "Front End Developer",
@@ -391,6 +375,7 @@ const experience = {
             location: "Peshawar, Pakistan (Remote)",
             description: "<li> Worked remotely as a Front-End Developer at Next Generation Circle, developing cross-platform applications using React.js (web) and Flutter (mobile) with a strong focus on performance and scalability.</li><br><li>Implemented MVVM architecture and Provider in Flutter, and built modular React components using Hooks, Context API, Redux, and Tailwind CSS for clean and maintainable code.</li><br><li>Integrated RESTful APIs, handled complex UIs, and collaborated in agile sprints using Git, Jira, and Slack, ensuring responsive design and smooth user experiences across all platforms.</li>",
             color: "#000000",
+            logo: NGENLogo
         },
     ],
 };
@@ -600,6 +585,7 @@ const contactPageData = {
         title: "Contact Me",
         description:
             "Feel free to reach out through any of the channels listed below — I’ll get back to you as promptly as possible.",
+        profileImage: profile,
     },
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 import "./ExperienceCard.css";
 import { Fade } from "react-awesome-reveal";
 
-function ExperienceCard({ experience, image, theme }) {
+function ExperienceCard({ experience, theme }) {
   return (
     <Fade>
       <div className="experience-card-col experience-card-gap">
@@ -12,7 +12,7 @@ function ExperienceCard({ experience, image, theme }) {
         >
           <div className="experience-company-logo">
             <img
-              src={image}
+              src={experience.logo}
               className="featured-image"
             />
           </div>

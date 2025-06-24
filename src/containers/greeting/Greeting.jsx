@@ -5,8 +5,6 @@ import WaveHand from "../../assets/images/waving-hand.png"
 import "./Greeting.css";
 import { Fade } from "react-awesome-reveal";
 import { greeting } from "../../Data/Data";
-import profile from "../../assets/images/profile.png"
-
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -77,7 +75,7 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
-            <img src={profile} alt="portfolio-profile" className="profile-image" />
+            <img src={greeting.profileImage} alt="portfolio-profile" className="profile-image" />
           </div>
         </div>
       </div>

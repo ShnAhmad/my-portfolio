@@ -22,7 +22,7 @@ export default function Contact(props) {
                         <div className="contact-heading-img-div">
                             <img
                                 className="profile-pic"
-                                src={profile}
+                                src={ContactData["profileImage"]}
                                 alt=""
                             />
                         </div>
@@ -39,7 +39,7 @@ export default function Contact(props) {
                             >
                                 {ContactData["description"]}
                             </p>
-                            <SocialMedia page="contact" />
+                            <SocialMedia />
                         </div>
                     </div>
                 </Fade>
