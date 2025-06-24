@@ -3,12 +3,6 @@ import comsats from "../assets/images/comsats.png"
 import cisco from "../assets/images/cisco.png"
 import comsatsATD from "../assets/images/comsatsatd.png"
 
-// Website related settings
-const settings = {
-    isSplash: true, // Change this to true if you want to use the splash screen.
-    useCustomCursor: true, // Change this to false if you want the good'ol cursor
-};
-
 //Home Page
 const greeting = {
     title: "Hi",
@@ -610,7 +604,6 @@ const contactPageData = {
 };
 
 export {
-    settings,
     greeting,
     socialMediaLinks,
     skills,

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { style } from "glamor";
 import "./Header.css";
-import { greeting, settings } from "../../Data/Data";
+import { greeting } from "../../Data/Data";
 import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi2";
 import { Fade } from "react-awesome-reveal";
@@ -30,7 +30,7 @@ function Header(props) {
         },
     });
 
-    const link = settings.isSplash ? "/splash" : "home";
+    const link = "/splash";
 
     const [currTheme, setCurrTheme] = useState(props.theme);
 

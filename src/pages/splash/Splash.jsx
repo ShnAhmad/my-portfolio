@@ -23,7 +23,7 @@ function Splash(props) {
     setTimeout(() => setRedirect(true), 2000);
 
     return redirect ? (
-        <Navigate to="/contact" />
+        <Navigate to="/home" />
     ) : (
         <AnimatedSplash theme={props.theme} />
     );
