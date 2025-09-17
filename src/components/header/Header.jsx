@@ -30,7 +30,7 @@ function Header(props) {
         },
     });
 
-    const link = "/splash";
+    const link = "/";
 
     const [currTheme, setCurrTheme] = useState(props.theme);
 
