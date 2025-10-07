@@ -513,6 +513,39 @@ const projects = {
                 },
             ],
         },
+         {
+            id: "SkillStream",
+            name: "Skill Stream",
+            url: "https://skill-stream-omega.vercel.app/",
+            description:
+                "Skill Stream is a social platform built with React and Appwrite, where developers share their coding journeys. Users can log in, post their experiences, explore stories from others, and manage their own posts through easy edit and delete options — creating a community that grows and learns together.",
+            languages: [
+                {
+                    name: "React",
+                    iconifyClass: "logos:react",
+                },
+                {
+                    name: "appwrite",
+                    iconifyClass: "logos:appwrite",
+                },
+                {
+                    name: "Tailwind",
+                    iconifyClass: "vscode-icons:file-type-tailwind",
+                },
+                {
+                    name: "Redux",
+                    iconifyClass: "devicon:redux",
+                },
+                {
+                    name: "Tinymce",
+                    iconifyClass: "file-icons:tinymce",
+                },
+                {
+                    name: "React Hook Forn",
+                    iconifyClass: "simple-icons:reacthookform",
+                },
+            ],
+        },
         {
             id: "Quizet",
             name: "Quizet",
@@ -535,23 +568,6 @@ const projects = {
                 {
                     name: "Trivia Database",
                     iconifyClass: "fluent:database-24-regular",
-                },
-            ],
-        },
-        {
-            id: "ExpenseTracker",
-            name: "Expense Tracker",
-            repoUrl: "https://github.com/ShnAhmad/Expense_Tracker",
-            description:
-                "This Expense Tracker app allows users to log, categorize, and visualize their daily expenses. With an intuitive interface and smooth animations, it provides a seamless experience for keeping track of your spending habits.",
-            languages: [
-                {
-                    name: "Flutter",
-                    iconifyClass: "logos:flutter",
-                },
-                {
-                    name: "Dart",
-                    iconifyClass: "logos:dart",
                 },
             ],
         },
