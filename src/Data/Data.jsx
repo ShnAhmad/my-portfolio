@@ -18,7 +18,7 @@ const greeting = {
     subTitle: "Full Stack Developer, Life Long Learner.",
     profileImage: profile,
     resumeLink:
-        "https://drive.google.com/file/d/18XzBhwPZWb6B4zZLQMt0lcsM44yziM22/view?usp=sharing",
+        "https://drive.google.com/file/d/1FOS2jR8dLGXlTGLTC_zqu_Nb9Aimef9F/view?usp=sharing",
     mail: "mailto:shanahmad.dev@gmail.com@gmail.com",
 };
 
