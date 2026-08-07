@@ -5,6 +5,8 @@ import comsatsATD from "../assets/images/comsatsatd.png"
 import profile from "../assets/images/profile.png"
 import arkhitechLogo from "../assets/images/Arkhitech.png"
 import NGENLogo from "../assets/images/NGEN.png"
+import AlphaSquadlogo from "../assets/images/alphasquad.jfif"
+
 
 
 //Home Page
@@ -358,12 +360,22 @@ const experience = {
         "Software Engineer with experience building scalable applications across web, mobile, and desktop platforms. I have contributed to high-performance POS and management systems at Arkhitech and developed scalable web and mobile apps at Next Generation Circle, working on both frontend and backend with a strong focus on clean architecture, performance, and responsive design.",
     experiences: [
         {
-            title: "Software Engineer - RaectJS/Flutter",
+            title: "Software Engineer",
+            company: "AlphaSquad",
+            company_url: "https://www.alphasquad.studio/",
+            duration: "(Oct, 2025 - July, 2026)",
+            location: "Islamabad, Pakistan",
+            description: "<li>Worked as a Software Engineer, building responsive and high-performance web applications using Next.js and React.js. Developed reusable UI components, integrated REST APIs, optimized application performance,</li><br><li> collaborated with cross-functional teams, and delivered scalable frontend solutions. Also worked on Elementor for WordPress website development and customization.</li>",
+            color: "#ffffff",
+            logo: AlphaSquadlogo
+        },
+        {
+            title: "Full Stack Developer",
             company: "Akhitech",
             company_url: "https://www.arkhitech.com/",
-            duration: "(Oct, 2024 - Present)",
+            duration: "(Aug, 2024 - Sept, 2025)",
             location: "Islamabad, Pakistan",
-            description: "<li> Currently working as a Software Engineer at Arkhitech, contributing to the development of cross-platform POS and management systems using React.js, React Native, Electron.js, Node.js, SQLite, and MUI.</li><br><li>Responsible for full-cycle development, including architecture planning, performance optimization, database handling, API integration, and ensuring code quality across mobile and desktop platforms.</li><br><li>Collaborating in a fast-paced agile environment, translating business requirements into scalable solutions while maintaining a strong focus on functionality, reliability, and maintainability.</li>",
+            description: "<li> At Arkhitech, I work as a Full Stack Developer where I manage and optimize high-performance POS and management software using React.js, Electron.js, and React Native. I have developed key features like </li><br><li>secure void item handling, auto-lock mechanisms, barcode printing, and quotation systems to enhance functionality and security. My contributions include improving performance</li><br><li> through code optimization, migrating components to functional paradigms, and ensuring data integrity via RESTful API-based synchronization. I’ve also deployed Electron apps with automatic updates and standardized styling using MUI, demonstrating a strong focus on performance, reliability, and maintainability across desktop and mobile platforms.</li>",
             color: "#ffffff",
             logo: arkhitechLogo
         },
