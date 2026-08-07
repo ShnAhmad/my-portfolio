@@ -365,7 +365,7 @@ const experience = {
             company_url: "https://www.alphasquad.studio/",
             duration: "(Oct, 2025 - July, 2026)",
             location: "Islamabad, Pakistan",
-            description: "<li>Worked as a Software Engineer, building responsive and high-performance web applications using Next.js and React.js. Developed reusable UI components, integrated REST APIs, optimized application performance,</li><br><li> collaborated with cross-functional teams, and delivered scalable frontend solutions. Also worked on Elementor for WordPress website development and customization.</li>",
+            description: "<li>Worked as a Software Engineer, building responsive and high-performance web applications using Next.js and React.js. Developed reusable UI components, integrated REST APIs, optimized application performance.</li><br><li> Collaborated with cross-functional teams, and delivered scalable frontend solutions. Also worked on Elementor for WordPress website development and customization.</li>",
             color: "#ffffff",
             logo: AlphaSquadlogo
         },
