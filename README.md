@@ -1,4 +1,3 @@
-
 # Portfolio
 
 This is a modern and responsive portfolio website built using React and Vite. It serves as a digital showcase of my skills, projects, and experience as a developer.
