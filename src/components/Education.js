@@ -35,7 +35,7 @@ export default function Education() {
     description:
       "Focused on software engineering, data structures, database systems, web technologies, and problem-solving fundamentals. Built a strong base in programming, system design, and collaborative development.",
     icon: GraduationCap,
-    image: "/images/university.jfif",
+    image: "/images/university.png",
   };
 
   const certifications = [

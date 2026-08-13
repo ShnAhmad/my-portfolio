@@ -53,7 +53,7 @@ export default function Projects() {
       icon: ScanBarcode,
       color: "green",
       techStack: ["React.js", "Electron.js", "Node.js", "React Native", "Postgres", "Redux"],
-      image: "/images/howmuch.jfif",
+      image: "/images/howmuch.png",
     },
     {
       title: "Divine Time",
@@ -64,7 +64,7 @@ export default function Projects() {
       icon: Trophy,
       color: "pink",
       techStack: ["Next.js", "Node.js", "TypeScript", "Redux","RTK Query","Tailwind CSS"],
-      image: "/images/divinetime.jfif",
+      image: "/images/divinetime.png",
     },
     {
       title: "Skill Stream",
