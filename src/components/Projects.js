@@ -108,7 +108,7 @@ export default function Projects() {
       icon: CarFront,
       color: "black",
       techStack: ["WordPress", "Elementor Pro", "PHP", "Stripe", "WooCommerce"],
-      image: "/images/lucasa.jfif",
+      image: "/images/lucasa.png",
     },
   ];
 
