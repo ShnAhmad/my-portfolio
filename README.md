@@ -3,7 +3,6 @@
 [![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-Visit%20Website-brightgreen)](https://my-portfolio-three-flame-40.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss)](https://tailwindcss.com/)
 
 ## 🌐 Live Portfolio
