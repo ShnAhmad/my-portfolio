@@ -1,6 +1,4 @@
-# Zeeshan Ahmad — Software Engineer
-
-> A modern, interactive portfolio showcasing my professional experience, projects, technical expertise, education, and software engineering journey.
+# Portfolio
 
 [![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-Visit%20Website-brightgreen)](https://my-portfolio-three-flame-40.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/)
