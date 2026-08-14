@@ -88,6 +88,27 @@ export default function TechSkills() {
     },
   };
 
+  const colorStyles = {
+    blue: {
+      tabClass:
+        "bg-blue-600/20 text-blue-400 border border-blue-400/30",
+      valueClass: "text-blue-400",
+      gradientClass: "from-blue-500 to-blue-400",
+    },
+    green: {
+      tabClass:
+        "bg-green-600/20 text-green-400 border border-green-400/30",
+      valueClass: "text-green-400",
+      gradientClass: "from-green-500 to-green-400",
+    },
+    purple: {
+      tabClass:
+        "bg-purple-600/20 text-purple-400 border border-purple-400/30",
+      valueClass: "text-purple-400",
+      gradientClass: "from-purple-500 to-purple-400",
+    },
+  };
+
   const tabs = [
     { id: "frontend", label: "Frontend", icon: Monitor, color: "blue" },
     { id: "backend", label: "Backend", icon: Server, color: "green" },
@@ -128,13 +149,14 @@ export default function TechSkills() {
             <div className="flex flex-col sm:flex-row gap-2 sm:space-x-2 sm:gap-0 p-1 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md w-full sm:w-auto">
               {tabs.map((tab) => {
                 const Icon = tab.icon;
+                const isActive = activeTab === tab.id;
                 return (
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
                     className={`relative flex items-center justify-center sm:justify-start space-x-2 px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl font-medium text-sm sm:text-base ${
-                      activeTab === tab.id
-                        ? `bg-${tab.color}-600/20 text-${tab.color}-400 border border-${tab.color}-400/30`
+                      isActive
+                        ? colorStyles[tab.color].tabClass
                         : "text-white/70 hover:text-white/90 hover:bg-white/10"
                     }`}
                   >
@@ -156,53 +178,45 @@ export default function TechSkills() {
             className="mb-12"
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-              {skillCategories[activeTab].skills.map((skill, index) => {
+              {skillCategories[activeTab].skills.map((skill) => {
                 const skillIcon = skill.icon ?? skill.Icon;
+                const activeColor = colorStyles[skillCategories[activeTab].color];
 
                 return (
-                <div
-                  key={skill.name}
-                  className="group relative rounded-2xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md p-6 hover:border-white/20 hover:from-white/15 hover:to-white/10 transition-all duration-300"
-                >
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center space-x-3">
-                      <Icon icon={skillIcon} className="h-7 w-7 text-white/90" />
-                      <div>
-                        <h3 className="font-semibold text-white">
-                          {skill.name}
-                        </h3>
-                        <p className="text-xs text-white/60">Proficiency</p>
+                  <div
+                    key={skill.name}
+                    className="group relative rounded-2xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md p-6 hover:border-white/20 hover:from-white/15 hover:to-white/10 transition-all duration-300"
+                  >
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center space-x-3">
+                        <Icon icon={skillIcon} className="h-7 w-7 text-white/90" />
+                        <div>
+                          <h3 className="font-semibold text-white">
+                            {skill.name}
+                          </h3>
+                          <p className="text-xs text-white/60">Proficiency</p>
+                        </div>
+                      </div>
+                      <div className={`text-sm font-bold ${activeColor.valueClass}`}>
+                        {skill.level}%
                       </div>
                     </div>
-                    <div
-                      className={`text-sm font-bold text-${
-                        skillCategories[activeTab].color
-                      }-400`}
-                    >
-                      {skill.level}%
-                    </div>
-                  </div>
 
-                  {/* Progress Bar */}
-                  <div className="relative">
-                    <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-                      <motion.div
-                        className={`h-full bg-gradient-to-r from-${
-                          skillCategories[activeTab].color
-                        }-500 to-${
-                          skillCategories[activeTab].color
-                        }-400 rounded-full`}
-                        initial={{ width: 0 }}
-                        animate={{ width: `${skill.level}%` }}
-                        transition={{
-                          duration: 1,
-                          ease: "easeOut",
-                        }}
-                      />
+                    <div className="relative">
+                      <div className="h-2 bg-white/10 rounded-full overflow-hidden">
+                        <motion.div
+                          className={`h-full rounded-full bg-gradient-to-r ${activeColor.gradientClass}`}
+                          initial={{ width: 0 }}
+                          animate={{ width: `${skill.level}%` }}
+                          transition={{
+                            duration: 1,
+                            ease: "easeOut",
+                          }}
+                        />
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
                   </div>
-                </div>
                 );
               })}
             </div>
