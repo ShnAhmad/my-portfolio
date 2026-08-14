@@ -288,34 +288,34 @@ export default function Projects() {
 
                       {/* Action buttons */}
                       {/* Action buttons */}
-<div className="mt-3 flex shrink-0 flex-col gap-2 sm:mt-4 sm:flex-row sm:gap-3">
-  <motion.a
-    href={project.liveUrl}
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`flex h-11 w-full flex-1 items-center justify-center gap-2 rounded-lg bg-${project.color}-600/30 border border-${project.color}-400/40 px-3 text-sm font-medium text-${project.color}-300 transition-all duration-200 hover:bg-${project.color}-600/40 hover:text-${project.color}-200`}
-    whileHover={{ scale: 1.02 }}
-    whileTap={{ scale: 0.98 }}
-  >
-    <Globe className="h-4 w-4 shrink-0" />
-    <span>Live Demo</span>
-  </motion.a>
+                      <div className="mt-3 flex shrink-0 flex-col gap-2 sm:mt-4 sm:flex-row sm:gap-3">
+                        <motion.a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`flex h-11 w-full flex-1 items-center justify-center gap-2 rounded-lg bg-${project.color}-600/30 border border-${project.color}-400/40 px-3 text-sm font-medium text-${project.color}-300 transition-all duration-200 hover:bg-${project.color}-600/40 hover:text-${project.color}-200`}
+                          whileHover={{ scale: 1.02 }}
+                          whileTap={{ scale: 0.98 }}
+                        >
+                          <Globe className="h-4 w-4 shrink-0" />
+                          <span>Live Demo</span>
+                        </motion.a>
 
-  {project.githubUrl && (
-    <motion.a
-      href={project.githubUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={`${project.title} on GitHub`}
-      className="flex h-11 w-full flex-1 items-center justify-center gap-2 rounded-lg border border-white/30 bg-white/20 px-3 text-white/80 transition-all duration-200 hover:bg-white/30 hover:text-white sm:w-11 sm:flex-none sm:px-0"
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-    >
-      <GithubIcon className="h-4 w-4 shrink-0" />
-      <span className="sm:hidden">GitHub</span>
-    </motion.a>
-  )}
-</div>
+                        {project.githubUrl && (
+                          <motion.a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`${project.title} on GitHub`}
+                            className="flex h-11 w-full flex-1 items-center justify-center gap-2 rounded-lg border border-white/30 bg-white/20 px-3 text-white/80 transition-all duration-200 hover:bg-white/30 hover:text-white sm:w-11 sm:flex-none sm:px-0"
+                            whileHover={{ scale: 1.02 }}
+                            whileTap={{ scale: 0.98 }}
+                          >
+                            <GithubIcon className="h-4 w-4 shrink-0" />
+                            <span className="sm:hidden">GitHub</span>
+                          </motion.a>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>

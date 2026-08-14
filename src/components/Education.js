@@ -9,6 +9,9 @@ import {
   MapPin,
   CheckCircle,
   Clock,
+  AwardIcon,
+  Percent,
+  University,
 } from "lucide-react";
 import { useEffect, useRef } from "react";
 
@@ -30,40 +33,41 @@ export default function Education() {
   const education = {
     degree: "Bachelor's in Software Engineering",
     school: "Comsats University Islamabad, Abbottabad Campus",
+    cgpa: "3.71/4.0",
     period: "2020 - 2024",
     location: "Abbottabad, Pakistan",
     description:
       "Focused on software engineering, data structures, database systems, web technologies, and problem-solving fundamentals. Built a strong base in programming, system design, and collaborative development.",
     icon: GraduationCap,
-    image: "/images/university.png",
+    image: "/images/comsats.png",
   };
 
   const certifications = [
-    {
-      name: "Merit Certificate",
-      code: "",
-      status: "completed",
-      icon: Award,
-      color: "yellow",
-      date: "Completed",
-    },
-    {
-      name: "CCNAv7",
-      code: "CCNA",
-      status: "completed",
-      icon: Award,
-      color: "blue",
-      date: "Completed",
-    },
-    {
-      name: "Certificate of Appreciation",
-      code: "",
-      status: "completed",
-      icon: Award,
-      color: "purple",
-      date: "Completed",
-    },
-  ];
+  {
+    name: "Merit Certificate",
+    description: "Awarded for achieving the Gold Medal for academic excellence.",
+    status: "completed",
+    icon: Award,
+    color: "yellow",
+    date: "Completed",
+  },
+  {
+    name: "CCNAv7",
+    description: "Introduction to Networks certification covering fundamental networking concepts.",
+    status: "completed",
+    icon: Award,
+    color: "blue",
+    date: "Completed",
+  },
+  {
+    name: "Certificate of Appreciation",
+    description: "Recognized for serving as Class Representative and demonstrating leadership.",
+    status: "completed",
+    icon: Award,
+    color: "purple",
+    date: "Completed",
+  },
+];
 
   const certificationColors = {
     green: "bg-green-600/20 text-green-400 border-green-400/30",
@@ -118,7 +122,7 @@ export default function Education() {
                 <img
                   src={education.image}
                   alt={education.school}
-                  className="w-full h-full object-fill transition-transform duration-300 hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
 
@@ -140,15 +144,19 @@ export default function Education() {
 
                 <div className="space-y-3 text-sm text-white/75 mb-6">
                   <div className="flex items-center gap-2">
-                    <Award className="h-4 w-4 text-white/60" />
+                    <University className="h-4 w-4 text-purple-600" />
                     <span className="font-medium text-white/90">{education.school}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Calendar className="h-4 w-4 text-white/60" />
+                    <Calendar className="h-4 w-4 text-blue-400" />
                     <span>{education.period}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4 text-white/60" />
+                    <Award className="h-4 w-4 text-yellow-700" />
+                    <span>{education.cgpa}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-green-500" />
                     <span>{education.location}</span>
                   </div>
                 </div>
@@ -205,9 +213,14 @@ export default function Education() {
                           {cert.name}
                         </h4>
 
-                        {cert.code && (
-                          <p className="text-xs text-white/60">{cert.code}</p>
+                        {cert.description && (
+                          <p className="text-sm text-white/70 mt-2">
+                            {cert.description}
+                          </p>
                         )}
+                        {/* {cert.code && (
+                          <p className="text-xs text-white/60">{cert.code}</p>
+                        )} */}
                       </div>
                     </div>
 
