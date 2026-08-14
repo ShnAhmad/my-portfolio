@@ -26,7 +26,7 @@ export default function Contact() {
       value: "shanahmad.dev@gmail.com",
       icon: "mdi:email-outline",
       href: "mailto:shanahmad.dev@gmail.com",
-      color: "from-red-500/20 to-red-600/20",
+      color: "from-gray-500/20 to-gray-600/20",
       textColor: "text-red-400",
       borderColor: "border-red-400/30",
     },
@@ -44,7 +44,7 @@ export default function Contact() {
       value: "linkedin.com/in/zeeshan-ahmad2",
       icon: "mdi:linkedin",
       href: "https://www.linkedin.com/in/zeeshan-ahmad2/",
-      color: "from-blue-500/20 to-blue-600/20",
+      color: "from-gray-500/20 to-gray-600/20",
       textColor: "text-blue-400",
       borderColor: "border-blue-400/30",
     },
@@ -106,7 +106,7 @@ export default function Contact() {
                     },
                   },
                 }}
-                className={`group rounded-2xl border ${contact.borderColor} bg-gradient-to-br ${contact.color} p-6 backdrop-blur-md transition-all duration-300 hover:border-opacity-100 hover:shadow-lg hover:shadow-current`}
+                className={`group rounded-2xl border ${contact.borderColor} bg-gradient-to-br ${contact.color} p-6 backdrop-blur-md transition-all duration-300 hover:border-opacity-100 hover:shadow-current hover:bg-white/10`}
               >
                 <div className="mb-4 flex h-12 w-12 items-center justify-center transition-transform duration-300 group-hover:scale-110">
                   <Icon
