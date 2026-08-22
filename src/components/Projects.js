@@ -8,6 +8,7 @@ import {
   BookOpen,
   Utensils,
   Globe,
+  Astroid,
 } from "lucide-react";
 
 const GithubIcon = ({ className }) => (
@@ -52,6 +53,16 @@ export default function Projects() {
   };
 
   const projects = [
+    {
+      title:"Pohana AI",
+      description:"Pohana AI is a lightweight, open-source AI chat platform built for lightning-fast response times and smooth interactive conversations. Leveraging Groq’s high-performance LPU inference, the app delivers near-instant AI responses without lag, providing a clean and intuitive chat interface for seamless user interaction.",
+      liveUrl:"https://pohana-ai.vercel.app/",
+      githubUrl:"https://github.com/ShnAhmad/Pohana-AI",
+      icon: Astroid ,
+      color:"yellow",
+      techStack:["Next.js","TypeScript","Groq","Cerebras","Superbase","Tailwind CSS",],
+      image:"/images/pohana-ai.png",
+    },
     {
       title: "Howmuch",
       description:
